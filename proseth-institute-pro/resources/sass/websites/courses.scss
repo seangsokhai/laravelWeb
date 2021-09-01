@@ -1,0 +1,295 @@
+/* Courses Area css
+============================================================================================ */
+.courses_area{
+	overflow: hidden;
+	.title-f{
+		width: 23%;
+		text-align: center;
+		margin-right: 15px;
+		padding: 5px 30px;
+		color: #166432;
+		margin-bottom: 20px;
+		cursor: pointer;
+		transition: all 0.5s;
+		font-weight: 600;
+		&:hover{
+			// background-color: #166432;
+			// color: #fff;
+		}
+	}
+	ul.nav {
+		background-color: #f9f9ff;
+
+		li {
+			width: 25%;
+			text-align: center;
+
+			a {
+				color: black;
+
+				&.active {
+					background-color: #166432 !important;
+				}
+			}
+		}
+	}
+	.courses_inner{
+		.bar-l{
+			max-width: 0;
+			opacity: 0;
+    		flex: 0;
+    		padding: 0;
+			transition: all 0.5s;
+			height: 0;
+			&.show{
+				max-width: 25%;
+				flex: 0 0 25%;
+				opacity: 1;
+				padding: 0 15px;
+				height: 100%;
+			}
+			.filter{
+				background-color: #f5f5f5;
+				box-shadow: 0 0 5px 0px lightgrey;
+				padding: 10px;
+				.card{
+					border: none;
+					background-color: unset;
+				}
+				.card-header{
+					padding: 0;
+					border: 0;
+					a{
+						width: 100%;
+						padding: 10px 15px;
+						border: none;
+						text-align: left;
+					}
+					
+				}
+				ul.list-group{
+					li.list-group-item{
+						padding: 0;
+						a{
+							width: 100%;
+							padding: .75rem 1.25rem;
+							display: block;
+						}
+					}
+				}
+			}
+		}
+		.bar-r{
+			.title{
+				border-bottom: 1px solid #166432;
+				.header{
+					margin-bottom: 0;
+					text-align: center;
+					color: #166432;
+					font-size: 16px;
+					font-weight: 500;
+				}
+			}
+			.blog{
+				.text{
+					a{
+						color: black;
+					}
+				}
+			}
+		}
+		.bar-r{
+			transition: all 0.5s;
+			max-width: 100%;
+			flex: 0 0 100%;
+			&.width{
+				max-width: 75%;
+				flex: 0 0 75%;
+			}
+		}
+		.blog{
+			.img{
+				img{
+					transition: all 0.5s;
+					opacity: 1;
+					&:hover{
+						opacity: 0.6;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+/* End Courses Area css
+============================================================================================ */
+
+/* Course Details Area css
+============================================================================================ */
+.course_details_area{
+	
+}
+.course_details_inner{
+	.nav.nav-tabs{
+		border: none;
+		margin-top: 30px;
+		li{
+			margin: 0px;
+			margin-right: 35px;
+			a{
+				border: none;
+				padding: 0px;
+				margin-bottom: 0px;
+				line-height: 55px;
+				font-size: 14px;
+				font-family: $rob;
+				color: $dip;
+				border-bottom: 1px solid transparent;
+				&.active{
+					border-color: $baseColor;
+				}
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+	}
+	.tab-content{
+		background: #f9f9ff;
+		.comments-area{
+			margin-top: 0px;
+			border-bottom: 0px;
+		}
+		.comment-form{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			border-top: 0px;
+			.submit_btn{
+				line-height: 40px;
+				border-radius: 5px;
+			}
+		}
+		.objctive_text{
+			padding: 25px;
+			border: 1px solid #eeeeee;
+			.list{
+				padding-top: 15px;
+				padding-bottom: 15px;
+				li{
+					margin-bottom: 28px;
+					a{
+						color: $pfont;
+						font-family: $rob;
+						font-size: 14px;
+						@include transition;
+						&:hover{
+							color: $baseColor;
+						}
+					}
+					&:last-child{
+						margin-bottom: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.c_details_list{
+	.list{
+		li{
+			margin-bottom: 10px;
+			background: #f9f9ff;
+			display: block;
+			line-height: 40px;
+			padding: 0px 18px;
+			font-size: 14px;
+			font-family: $rob;
+			color: $pfont;
+			span{
+				float: right;
+				&.c-name{
+					width: 80%;
+				}
+			}
+			&:first-child{
+				a{
+					span{
+						color: $baseColor;
+					}
+				}
+			}
+		}
+	}
+	.main_btn{
+		display: block;
+	}
+	#register{
+		ul.list{
+			width: 100%;
+			li{
+				margin-bottom: 0;
+			}
+		}
+		input{
+			font-size: 15px;
+		}
+	}
+}
+
+/* End Course Details Area css
+============================================================================================ */
+
+
+
+$c-1: #203075;
+$c-2: lighten($c-1, 3%);
+
+.no-data{
+	position: relative;
+	.wrapper {
+		max-width: 960px;
+		width: 100%; 
+		margin: 30px auto;
+		transform: scale(0.8);
+	  }
+	  .landing-page {
+		max-width: 960px;
+		height: 475px;
+		margin: 0;
+		box-shadow: 0px 0px 8px 1px #ccc;
+		background: #fafafa;
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	  }
+	  svg {
+		width: 50%;
+		max-height: 225px;
+		height: auto;
+		margin: 0 0 15px;
+	  }
+	  h1 {
+		font-size: 48px;
+		margin: 0;
+	  }
+	  p {
+		font-size: 16px;
+		margin: 16px auto 24px;
+		text-align: center;
+	  }
+	  button {
+		border-radius: 50px;
+		padding: 8px 24px;
+		font-size: 16px;
+		cursor: pointer;
+		background: #62AD9B;
+		color: #fff;
+		border: none;
+		box-shadow: 0 4px 8px 0 #ccc;
+	  }
+}
+
